@@ -437,35 +437,31 @@ public class Regional extends javax.swing.JFrame {
             File archivo2 = new File("ParticipantesPuntu.txt");
             File archivo = new File("ParticipantesRegional.txt");
             FileWriter fw2 = new FileWriter(archivo2, true);
+            FileWriter fw1 = new FileWriter(archivo, true);
             BufferedWriter bw2 = new BufferedWriter(fw2);
+            BufferedWriter bw1 = new BufferedWriter(fw1);
              numero = 1;
              StringTokenizer st;
              String[] partes;
                 while((sCadena = bf.readLine()) != null){
                     partes = sCadena.split("/");
+                    //escribe solo en e de puntuacion
                     if(numcoreografia.equals(partes[0])){
-                        bReg = false;
-                        if(partes.length == 6){
-                            bw2.write(partes[0]+"/"+partes[1]+"/"+partes[2]+"/"+partes[3]+"/"+partes[4]+"/"+puntuacion+"\r\n");
-                        }
-                        else{
                             bw2.write(sCadena+"/"+puntuacion+"\r\n");
-                        }
                     }
                     else{
-                        bw2.write(sCadena+"\r\n");
+                        bReg = false;
                     }
                     registro++;
                 }
-                if(bReg){
+                if(!bReg){
                     JOptionPane.showMessageDialog(this, "No se encontro la coreografia", "Informacion",
                                 JOptionPane.WARNING_MESSAGE);
                 }
-                archivo.delete();
-                archivo2.renameTo(archivo);
-                
+
               bf.close();
           bw2.close();
+          bw1.close();
         } 
         catch(IOException e){
             System.out.println("El archivo no se pudo crear"+e);
@@ -496,7 +492,7 @@ public class Regional extends javax.swing.JFrame {
             }
             BufferedWriter bw, bw1, bw2, bw3;
                 //BufferedReader bf2 = new BufferedReader(new FileReader("Resultados.txt"));
-                BufferedReader bf = new BufferedReader(new FileReader("ParticipantesRegional.txt"));
+                BufferedReader bf = new BufferedReader(new FileReader("ParticipantesPuntu.txt"));
                 while((sCadena = bf.readLine()) != null){
                     partes = sCadena.split("/");
                     if(partes.length < 6){

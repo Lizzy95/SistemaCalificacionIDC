@@ -1,14 +1,12 @@
 --------------------------MEDALLAS Junior--------------------------
-Coreografia 1 ec medalla Gold 
+Coreografia 1 erv medalla Bronze 
 --------------------------MEDALLAS Teen--------------------------
-Coreografia 2 asd medalla de Gold 
 --------------------------MEDALLAS Senior--------------------------
-Coreografia 3 ree medalla de HighGold 
 --------------------------PLACAS POR TECNICA DE REGIONAL--------------------------
 --------------------------JUNIOR SOLO 1--------------------------
 Jazz
 
- Coreografia 1 ec 1 Lugar 
+ Coreografia 1 erv 1 Lugar 
 
 Contemporaneo
 
@@ -90,8 +88,6 @@ Jazz
 
 Contemporaneo
 
- Coreografia 2 asd 1 Lugar 
-
 HipHop
 
 Ballet
@@ -172,8 +168,6 @@ Contemporaneo
 
 HipHop
 
- Coreografia 3 ree 1 Lugar 
-
 Ballet
 
 DanceMix
@@ -214,7 +208,7 @@ DanceMix
 --------------------------TROFEOS POR CATEGORIA DE REGIONAL--------------------------
 --------------------------JUNIOR SOLO 1--------------------------
 
- Coreografia 1 ec 1 Lugar 
+ Coreografia 1 erv 1 Lugar 
 
 --------------------------JUNIOR DUO 2--------------------------
 
@@ -231,8 +225,6 @@ DanceMix
 
 --------------------------TEEN DUO 2--------------------------
 
- Coreografia 2 asd 1 Lugar 
-
 --------------------------TEEN TRIO 3--------------------------
 
 --------------------------TEEN GRUPO 4-8--------------------------
@@ -248,8 +240,6 @@ DanceMix
 
 --------------------------SENIOR TRIO 3--------------------------
 
- Coreografia 3 ree 1 Lugar 
-
 --------------------------SENIOR GRUPO 4-8--------------------------
 
 --------------------------SENIOR LINEA 9-14--------------------------
@@ -259,7 +249,7 @@ DanceMix
 
 --------------------------TROFEOS OVERALL--------------------------
 Solo-Duo-Trio Junior
-El primer lugar de over all  coreografia 1 ec
+El primer lugar de over all  coreografia 1 erv
 Solo-Duo-Trio Teen
 Solo-Duo-Trio Senior
 Grupo-Linea-Produccion Junior
