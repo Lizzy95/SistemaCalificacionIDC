@@ -433,7 +433,7 @@ public class Regional extends javax.swing.JFrame {
             String sCadena;
             Integer posicion=0, registro = 0, tamano= 0;
             String sAux;
-            Boolean bReg = true;
+            Boolean bReg = false;
             File archivo2 = new File("ParticipantesPuntu.txt");
             File archivo = new File("ParticipantesRegional.txt");
             FileWriter fw2 = new FileWriter(archivo2, true);
@@ -450,12 +450,9 @@ public class Regional extends javax.swing.JFrame {
                             bw2.write(sCadena+"/"+puntuacion+"\r\n");
                             bReg = true;
                     }
-                    else{
-                        bReg = false;
-                    }
                     registro++;
                 }
-                if(bReg == false){
+                if(!bReg){
                     JOptionPane.showMessageDialog(this, "No se encontro la coreografia", "Informacion",
                                 JOptionPane.WARNING_MESSAGE);
                 }
