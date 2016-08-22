@@ -448,13 +448,14 @@ public class Regional extends javax.swing.JFrame {
                     //escribe solo en e de puntuacion
                     if(numcoreografia.equals(partes[0])){
                             bw2.write(sCadena+"/"+puntuacion+"\r\n");
+                            bReg = true;
                     }
                     else{
                         bReg = false;
                     }
                     registro++;
                 }
-                if(!bReg){
+                if(bReg == false){
                     JOptionPane.showMessageDialog(this, "No se encontro la coreografia", "Informacion",
                                 JOptionPane.WARNING_MESSAGE);
                 }

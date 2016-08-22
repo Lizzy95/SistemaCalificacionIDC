@@ -432,6 +432,7 @@ public class Nacional extends javax.swing.JFrame {
             File archivo2 = new File("ParticipantesPuntuNac.txt");
             File archivo = new File("ParticipantesNacional.txt");
             FileWriter fw2 = new FileWriter(archivo2, true);
+            FileWriter fw1 = new FileWriter(archivo, true);
             BufferedWriter bw2 = new BufferedWriter(fw2);
              numero = 1;
              StringTokenizer st;
@@ -439,20 +440,18 @@ public class Nacional extends javax.swing.JFrame {
                 while((sCadena = bf.readLine()) != null){
                     partes = sCadena.split("/");
                     if(numcoreografia.equals(partes[0])){
-                        bReg = false;
+                        bReg = true;
                         bw2.write(sCadena+"/"+puntuacion+"\r\n");                      
                     }
                     else{
-                        bw2.write(sCadena+"\r\n");
+                        bReg = false;
                     }
                     registro++;
                 }
-                if(bReg){
+                if(bReg == false){
                     JOptionPane.showMessageDialog(this, "No se encontro la coreografia", "Informacion",
                                 JOptionPane.WARNING_MESSAGE);
                 }
-                archivo.delete();
-                archivo2.renameTo(archivo);
                 
               bf.close();
           bw2.close();
